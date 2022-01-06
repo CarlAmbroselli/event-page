@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang=en>
+
+<head>
+  <meta charset=utf-8>
+  <meta name="robots" content="noindex">
+  <title>10.06.2023 - Hochzeit von Krissi und Carl</title>
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <style>
+    body {
+      text-align: center;
+      background-color: #EBEAE8;
+      color: #262626;
+    }
+
+    @font-face {
+      font-family: Aerotis;
+      src: url("/Aerotis.ttf");
+    }
+
+    @font-face {
+      font-family: TeXGyreTermes-Regular;
+      src: url("/texgyretermes-regular.otf");
+    }
+
+    @font-face {
+      font-family: Bentham-Regular;
+      src: url("/Bentham-Regular.ttf");
+    }
+
+    @font-face {
+      font-family: Licorice;
+      src: url("/Licorice-Regular.ttf");
+    }
+
+    h2 {
+      font-family: Aerotis;
+      font-size: 2.7em;
+      font-weight: 100;
+    }
+
+    h3 {
+      font-family: TeXGyreTermes-Regular;
+      font-size: 1.5em;
+      color: #000000;
+      letter-spacing: 10px;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 45px 0;
+      font-weight: 100;
+    }
+
+    p {
+      font-family: Bentham-Regular;
+      padding: 0 10px;
+      color: #000000;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+
+    p.date {
+      font-size: 1.4em;
+    }
+
+    p.more {
+      font-size: 1.4em;
+      font-family: Licorice;
+    }
+
+    img.header {
+      width: 400px;
+      max-width: 80vw;
+      height: auto;
+    }
+
+    #password {
+      width: 100px;
+      border: 0px;
+      padding: 5px;
+      font-size: 12px;
+      border-radius: 5px;
+      min-width: 200px;
+    }
+
+    button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 5px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 12px;
+      border-radius: 5px;
+      margin-left: 5px;
+    }
+  </style>
+
+
+  <script>
+    var encrypted = [157,221,160,197,212,216,205,205,225,220,129,185,203,215,209,216,211,206,209,219,200,153,130,174,209,229,133,155,170,181,343,228,199,224,209,216,215,211,209,219,129,185,195,224,211,175,148,220,170]
+
+    function encrypt(input, password) {
+      var lowerPassword = password.toLowerCase()
+      var output = []
+      for (var i = 0; i < input.length; i++) {
+        output.push(input.charCodeAt(i) + lowerPassword.charCodeAt(i % lowerPassword.length))
+      }
+      return output;
+    }
+
+    function decrypt(input, password) {
+      var lowerPassword = password.toLowerCase()
+      var output = ""
+      for (var i = 0; i < input.length; i++) {
+        output += String.fromCharCode(input[i] - lowerPassword.charCodeAt(i % lowerPassword.length))
+      }
+      console.log(output)
+      return output;
+    }
+
+    function unlock() {
+      var password = document.getElementById("password").value.toLowerCase().trim();
+      var check = 0;
+      for (var i = 0; i < password.length; i++) {
+        check += password.charCodeAt(i)
+      }
+      if (check == 1066) {
+        document.getElementById("protected").innerHTML = decrypt(encrypted, password);
+      } else {
+        document.getElementById("hint").innerHTML = "Für weitere Details gib bitte den <u>Nachnamen des Bräutigams</u> ein: <br /><br />Eingabe leider falsch."
+      }
+    }
+  </script>
+
+</head>
+
+<body>
+  <h3>Save the date</h3>
+
+  <img class="header" src="picture.png" />
+
+  <h2>Krissi und Carl</h2>
+
+  <p class="date">10.06.2023</p>
+  <div id="protected" >
+    <p id="hint">Für weitere Details gib bitte den <u>Nachnamen des Bräutigams</u> ein:</p>
+    <input id="password" />
+    <button id="unlock" onclick=unlock()>Überprüfen</button>
+  </div>
+  
+
+  <p class="more">Weitere Details folgen!</p>
+</body>
+
+<script>
+  var input = document.getElementById("password");
+  input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+      event.preventDefault();
+      document.getElementById("unlock").click();
+    }
+  });
+</script>
+
+</html>
