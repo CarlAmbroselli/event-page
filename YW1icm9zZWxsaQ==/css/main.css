@@ -330,7 +330,7 @@ ul.instafeed-list li a{
     color: #ffffff;
 }
  .gradient-overlay:before {
-    background-color: rgba(23,23,38,.6);
+    background-color: #6B6B73;
     position: absolute;
     top: 0;
     right: 0;
