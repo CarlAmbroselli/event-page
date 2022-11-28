@@ -32,6 +32,16 @@ body {
     font-family: 'Elaris';
 }
 
+.fancy-font {
+    font-family: 'Elaris';
+}
+
+@media (pointer:none), (pointer:coarse) {
+    .secondary-font {
+        font-family: 'Oxygen' !important;
+    }
+}
+
 .heading-font {
     font-family: 'Goku';
 }
