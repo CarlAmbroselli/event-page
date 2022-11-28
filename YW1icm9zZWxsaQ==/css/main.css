@@ -54,7 +54,7 @@ body {
     color: #bfbfbf;
 }
 
-.thank-you a {
+.thank-you a, .underlined-links a {
     text-decoration-line: underline;
     text-decoration-style: dashed;
 }
