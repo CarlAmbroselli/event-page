@@ -50,7 +50,7 @@
 
   // Countdown setup
 
-    $('.countdown').countdown('2023/6/10 14:00:00').on('update.countdown', function(event) {
+    $('.countdown').countdown('2023/6/10 15:00:00').on('update.countdown', function(event) {
   var $this = $(this).html(event.strftime(''
     + '<div class="col mt-3"><div class="card card-body countdown-shadow mb-4 mb-lg-0 p-3"><span class="counter text-primary mb-1 heading-font">%D</span> <span class="label ">Tag%!d:e;</span></div></div> '
     + '<div class="col mt-3"><div class="card card-body countdown-shadow mb-4 mb-lg-0 p-3"><span class="counter text-primary mb-1 heading-font">%H</span> <span class="label">Stunde%!H:n;</span></div></div> '
