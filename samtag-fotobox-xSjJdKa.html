@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="/assets/jquery-3.3.1.min.js"></script>
+    <link href="/assets/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/assets/jquery.nanogallery2.min.js"></script>
+    <script src="/assets/tailwind.js"></script>
+    <style>
+      @font-face {
+         font-family: 'goku';
+         src: url('/webfonts/Goku.ttf') format('truetype');
+         font-weight: normal;
+         font-style: normal;
+         font-display: swap;
+      }
+
+      @font-face {
+         font-family: 'Elaris';
+         src: url("/webfonts/elaris-regular.otf") format("opentype");
+      }
+
+      .goku {
+        font-family: goku;
+      }
+
+      .elaris {
+        font-family: elaris;
+      }
+   </style>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background-color: #E9E9E9;
+      }
+      .header, .footer-content {
+        background-color: #E9E9E9;
+        border: 0px;
+        
+      }
+
+      .header .curved-decoration svg:not([class*=bg]) path {
+          fill: #fff;
+      }
+
+      .footer .curved-decoration svg:not([class*=bg]) path {
+          fill: #E9E9E9;
+      }
+
+      .footer svg {
+        transform: scaleX(-1);
+      }
+
+      .footer {
+        background-color: white;
+      }
+
+      .curved-decoration svg {
+        height: auto;
+      }
+
+      #wedding-photobox {
+        padding: 2px;
+      }
+
+      .bg-fotobox::before {    
+            background-image: url('https://files.krissiundcarl.de/file/carlundkrissi-hochzeit/fotobox/20230610_223425_912_IMG_0021.JPG');
+      }
+
+      .bg-samstag-gaeste::before {    
+            background-image: url('https://files.krissiundcarl.de/file/carlundkrissi-hochzeit/samstag-gaeste/anja-2.jpeg');
+      }
+
+      .bg-box::before {
+            content: "";
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: 0.5;
+            border-radius: 0.75rem;
+      }
+
+      #photolist {
+        background-color: white;
+      }
+      
+    </style>
+  </head>
+  <body>
+
+    <div class="header">
+      <div class="header-content flex flex-col items-center py-12">
+        <h1 class="goku text-4xl md:text-6xl pt-8">Fotos aus der Fotobox</h1>
+        <h3 class="elaris text-md md:text-lg pt-2 pb-8">Danke f&uuml;r 113 kreative Schnappsch&uuml;sse!</h3>
+        <a class="w-56 inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-slate-900 text-white hover:bg-slate-700" href="https://files.krissiundcarl.de/file/carlundkrissi-hochzeit/fotobox/fotobox.zip" download="fotobox.zip" target="_blank">Alle Fotos herunterladen</a>
+      </div>
+      <div class="curved-decoration">
+        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2560 168.6227"
+          enable-background="new 0 0 2560 168.6227" xml:space="preserve">
+          <g>
+          </g>
+          <g>
+            <path d="M2560,0c0,0-219.6543,165.951-730.788,124.0771c-383.3156-31.4028-827.2138-96.9514-1244.7139-96.9514
+                    c-212.5106,0-439,3.5-584.4982,1.5844l0,139.9126h2560V0z"></path>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div id="wedding-photobox" class="py-8" data-nanogallery2='{
+        "itemsBaseURL": "https://files.krissiundcarl.de/file/carlundkrissi-hochzeit/fotobox/",
+        "thumbnailWidth": "auto",
+        "thumbnailBorderVertical": 0,
+        "thumbnailBorderHorizontal": 0,
+        "thumbnailDisplayTransition": "none",
+        "thumbnailLabel": {
+          "position": "overImageOnBottom",
+          "display": false
+        },
+        "thumbnailAlignment": "center",
+        "displayBreadcrumb": false,
+        "breadcrumbAutoHideTopLevel": false,
+        "breadcrumbOnlyCurrentLevel": false,
+        "thumbnailOpenImage": true
+      }'>
+      <a href="20230609_203640_240_IMG_0003.JPG" data-ngthumb="thumbnails/20230609_203640_240_IMG_0003.JPG.png" data-ngdesc="20:36:40">20:36:40</a>
+      <a href="20230609_204042_014_IMG_0005.JPG" data-ngthumb="thumbnails/20230609_204042_014_IMG_0005.JPG.png" data-ngdesc="20:40:42">20:40:42</a>
+      <a href="20230609_204214_354_IMG_0006.JPG" data-ngthumb="thumbnails/20230609_204214_354_IMG_0006.JPG.png" data-ngdesc="20:42:14">20:42:14</a>
+      <a href="20230609_204535_741_IMG_0007.JPG" data-ngthumb="thumbnails/20230609_204535_741_IMG_0007.JPG.png" data-ngdesc="20:45:35">20:45:35</a>
+      <a href="20230609_204554_878_IMG_0008.JPG" data-ngthumb="thumbnails/20230609_204554_878_IMG_0008.JPG.png" data-ngdesc="20:45:54">20:45:54</a>
+      <a href="20230609_205155_484_IMG_0001.JPG" data-ngthumb="thumbnails/20230609_205155_484_IMG_0001.JPG.png" data-ngdesc="20:51:55">20:51:55</a>
+      <a href="20230610_084518_105_IMG_0002.JPG" data-ngthumb="thumbnails/20230610_084518_105_IMG_0002.JPG.png" data-ngdesc="08:45:18">08:45:18</a>
+      <a href="20230610_114156_100_IMG_0003.JPG" data-ngthumb="thumbnails/20230610_114156_100_IMG_0003.JPG.png" data-ngdesc="11:41:56">11:41:56</a>
+      <a href="20230610_114406_825_IMG_0004.JPG" data-ngthumb="thumbnails/20230610_114406_825_IMG_0004.JPG.png" data-ngdesc="11:44:06">11:44:06</a>
+      <a href="20230610_114423_552_IMG_0005.JPG" data-ngthumb="thumbnails/20230610_114423_552_IMG_0005.JPG.png" data-ngdesc="11:44:23">11:44:23</a>
+      <a href="20230610_115101_866_IMG_0006.JPG" data-ngthumb="thumbnails/20230610_115101_866_IMG_0006.JPG.png" data-ngdesc="11:51:01">11:51:01</a>
+      <a href="20230610_121300_047_IMG_0001.JPG" data-ngthumb="thumbnails/20230610_121300_047_IMG_0001.JPG.png" data-ngdesc="12:13:00">12:13:00</a>
+      <a href="20230610_121600_224_IMG_0002.JPG" data-ngthumb="thumbnails/20230610_121600_224_IMG_0002.JPG.png" data-ngdesc="12:16:00">12:16:00</a>
+      <a href="20230610_121955_766_IMG_0003.JPG" data-ngthumb="thumbnails/20230610_121955_766_IMG_0003.JPG.png" data-ngdesc="12:19:55">12:19:55</a>
+      <a href="20230610_122004_624_IMG_0004.JPG" data-ngthumb="thumbnails/20230610_122004_624_IMG_0004.JPG.png" data-ngdesc="12:20:04">12:20:04</a>
+      <a href="20230610_122344_037_IMG_0005.JPG" data-ngthumb="thumbnails/20230610_122344_037_IMG_0005.JPG.png" data-ngdesc="12:23:44">12:23:44</a>
+      <a href="20230610_122446_479_IMG_0006.JPG" data-ngthumb="thumbnails/20230610_122446_479_IMG_0006.JPG.png" data-ngdesc="12:24:46">12:24:46</a>
+      <a href="20230610_161140_889_IMG_0007.JPG" data-ngthumb="thumbnails/20230610_161140_889_IMG_0007.JPG.png" data-ngdesc="16:11:40">16:11:40</a>
+      <a href="20230610_220659_795_IMG_0008.JPG" data-ngthumb="thumbnails/20230610_220659_795_IMG_0008.JPG.png" data-ngdesc="22:06:59">22:06:59</a>
+      <a href="20230610_220719_060_IMG_0009.JPG" data-ngthumb="thumbnails/20230610_220719_060_IMG_0009.JPG.png" data-ngdesc="22:07:19">22:07:19</a>
+      <a href="20230610_220737_823_IMG_0010.JPG" data-ngthumb="thumbnails/20230610_220737_823_IMG_0010.JPG.png" data-ngdesc="22:07:37">22:07:37</a>
+      <a href="20230610_220751_740_IMG_0011.JPG" data-ngthumb="thumbnails/20230610_220751_740_IMG_0011.JPG.png" data-ngdesc="22:07:51">22:07:51</a>
+      <a href="20230610_220809_120_IMG_0012.JPG" data-ngthumb="thumbnails/20230610_220809_120_IMG_0012.JPG.png" data-ngdesc="22:08:09">22:08:09</a>
+      <a href="20230610_221304_941_IMG_0013.JPG" data-ngthumb="thumbnails/20230610_221304_941_IMG_0013.JPG.png" data-ngdesc="22:13:04">22:13:04</a>
+      <a href="20230610_222334_690_IMG_0014.JPG" data-ngthumb="thumbnails/20230610_222334_690_IMG_0014.JPG.png" data-ngdesc="22:23:34">22:23:34</a>
+      <a href="20230610_222414_000_IMG_0015.JPG" data-ngthumb="thumbnails/20230610_222414_000_IMG_0015.JPG.png" data-ngdesc="22:24:14">22:24:14</a>
+      <a href="20230610_222435_981_IMG_0016.JPG" data-ngthumb="thumbnails/20230610_222435_981_IMG_0016.JPG.png" data-ngdesc="22:24:35">22:24:35</a>
+      <a href="20230610_222516_886_IMG_0017.JPG" data-ngthumb="thumbnails/20230610_222516_886_IMG_0017.JPG.png" data-ngdesc="22:25:16">22:25:16</a>
+      <a href="20230610_222543_725_IMG_0018.JPG" data-ngthumb="thumbnails/20230610_222543_725_IMG_0018.JPG.png" data-ngdesc="22:25:43">22:25:43</a>
+      <a href="20230610_223133_533_IMG_0019.JPG" data-ngthumb="thumbnails/20230610_223133_533_IMG_0019.JPG.png" data-ngdesc="22:31:33">22:31:33</a>
+      <a href="20230610_223153_050_IMG_0020.JPG" data-ngthumb="thumbnails/20230610_223153_050_IMG_0020.JPG.png" data-ngdesc="22:31:53">22:31:53</a>
+      <a href="20230610_223425_912_IMG_0021.JPG" data-ngthumb="thumbnails/20230610_223425_912_IMG_0021.JPG.png" data-ngdesc="22:34:25">22:34:25</a>
+      <a href="20230610_223500_575_IMG_0022.JPG" data-ngthumb="thumbnails/20230610_223500_575_IMG_0022.JPG.png" data-ngdesc="22:35:00">22:35:00</a>
+      <a href="20230610_223521_053_IMG_0023.JPG" data-ngthumb="thumbnails/20230610_223521_053_IMG_0023.JPG.png" data-ngdesc="22:35:21">22:35:21</a>
+      <a href="20230610_223535_285_IMG_0024.JPG" data-ngthumb="thumbnails/20230610_223535_285_IMG_0024.JPG.png" data-ngdesc="22:35:35">22:35:35</a>
+      <a href="20230610_223556_558_IMG_0025.JPG" data-ngthumb="thumbnails/20230610_223556_558_IMG_0025.JPG.png" data-ngdesc="22:35:56">22:35:56</a>
+      <a href="20230610_223634_490_IMG_0026.JPG" data-ngthumb="thumbnails/20230610_223634_490_IMG_0026.JPG.png" data-ngdesc="22:36:34">22:36:34</a>
+      <a href="20230610_223656_323_IMG_0027.JPG" data-ngthumb="thumbnails/20230610_223656_323_IMG_0027.JPG.png" data-ngdesc="22:36:56">22:36:56</a>
+      <a href="20230610_223719_001_IMG_0028.JPG" data-ngthumb="thumbnails/20230610_223719_001_IMG_0028.JPG.png" data-ngdesc="22:37:19">22:37:19</a>
+      <a href="20230610_224008_345_IMG_0029.JPG" data-ngthumb="thumbnails/20230610_224008_345_IMG_0029.JPG.png" data-ngdesc="22:40:08">22:40:08</a>
+      <a href="20230610_224030_471_IMG_0030.JPG" data-ngthumb="thumbnails/20230610_224030_471_IMG_0030.JPG.png" data-ngdesc="22:40:30">22:40:30</a>
+      <a href="20230610_224129_180_IMG_0031.JPG" data-ngthumb="thumbnails/20230610_224129_180_IMG_0031.JPG.png" data-ngdesc="22:41:29">22:41:29</a>
+      <a href="20230610_224149_621_IMG_0032.JPG" data-ngthumb="thumbnails/20230610_224149_621_IMG_0032.JPG.png" data-ngdesc="22:41:49">22:41:49</a>
+      <a href="20230610_224212_002_IMG_0033.JPG" data-ngthumb="thumbnails/20230610_224212_002_IMG_0033.JPG.png" data-ngdesc="22:42:12">22:42:12</a>
+      <a href="20230610_224242_965_IMG_0034.JPG" data-ngthumb="thumbnails/20230610_224242_965_IMG_0034.JPG.png" data-ngdesc="22:42:42">22:42:42</a>
+      <a href="20230610_224618_655_IMG_0035.JPG" data-ngthumb="thumbnails/20230610_224618_655_IMG_0035.JPG.png" data-ngdesc="22:46:18">22:46:18</a>
+      <a href="20230610_224649_311_IMG_0036.JPG" data-ngthumb="thumbnails/20230610_224649_311_IMG_0036.JPG.png" data-ngdesc="22:46:49">22:46:49</a>
+      <a href="20230610_224815_043_IMG_0037.JPG" data-ngthumb="thumbnails/20230610_224815_043_IMG_0037.JPG.png" data-ngdesc="22:48:15">22:48:15</a>
+      <a href="20230610_224830_704_IMG_0038.JPG" data-ngthumb="thumbnails/20230610_224830_704_IMG_0038.JPG.png" data-ngdesc="22:48:30">22:48:30</a>
+      <a href="20230610_224855_326_IMG_0039.JPG" data-ngthumb="thumbnails/20230610_224855_326_IMG_0039.JPG.png" data-ngdesc="22:48:55">22:48:55</a>
+      <a href="20230610_225450_689_IMG_0001.JPG" data-ngthumb="thumbnails/20230610_225450_689_IMG_0001.JPG.png" data-ngdesc="22:54:50">22:54:50</a>
+      <a href="20230610_225942_500_IMG_0002.JPG" data-ngthumb="thumbnails/20230610_225942_500_IMG_0002.JPG.png" data-ngdesc="22:59:42">22:59:42</a>
+      <a href="20230610_230206_314_IMG_0003.JPG" data-ngthumb="thumbnails/20230610_230206_314_IMG_0003.JPG.png" data-ngdesc="23:02:06">23:02:06</a>
+      <a href="20230610_230227_731_IMG_0004.JPG" data-ngthumb="thumbnails/20230610_230227_731_IMG_0004.JPG.png" data-ngdesc="23:02:27">23:02:27</a>
+      <a href="20230610_230812_321_IMG_0005.JPG" data-ngthumb="thumbnails/20230610_230812_321_IMG_0005.JPG.png" data-ngdesc="23:08:12">23:08:12</a>
+      <a href="20230610_230853_913_IMG_0006.JPG" data-ngthumb="thumbnails/20230610_230853_913_IMG_0006.JPG.png" data-ngdesc="23:08:53">23:08:53</a>
+      <a href="20230610_230941_738_IMG_0007.JPG" data-ngthumb="thumbnails/20230610_230941_738_IMG_0007.JPG.png" data-ngdesc="23:09:41">23:09:41</a>
+      <a href="20230610_232031_695_IMG_0008.JPG" data-ngthumb="thumbnails/20230610_232031_695_IMG_0008.JPG.png" data-ngdesc="23:20:31">23:20:31</a>
+      <a href="20230610_232153_641_IMG_0009.JPG" data-ngthumb="thumbnails/20230610_232153_641_IMG_0009.JPG.png" data-ngdesc="23:21:53">23:21:53</a>
+      <a href="20230610_232305_354_IMG_0010.JPG" data-ngthumb="thumbnails/20230610_232305_354_IMG_0010.JPG.png" data-ngdesc="23:23:05">23:23:05</a>
+      <a href="20230610_232405_040_IMG_0011.JPG" data-ngthumb="thumbnails/20230610_232405_040_IMG_0011.JPG.png" data-ngdesc="23:24:05">23:24:05</a>
+      <a href="20230610_232509_270_IMG_0012.JPG" data-ngthumb="thumbnails/20230610_232509_270_IMG_0012.JPG.png" data-ngdesc="23:25:09">23:25:09</a>
+      <a href="20230610_232525_061_IMG_0013.JPG" data-ngthumb="thumbnails/20230610_232525_061_IMG_0013.JPG.png" data-ngdesc="23:25:25">23:25:25</a>
+      <a href="20230610_232540_708_IMG_0014.JPG" data-ngthumb="thumbnails/20230610_232540_708_IMG_0014.JPG.png" data-ngdesc="23:25:40">23:25:40</a>
+      <a href="20230610_232557_312_IMG_0015.JPG" data-ngthumb="thumbnails/20230610_232557_312_IMG_0015.JPG.png" data-ngdesc="23:25:57">23:25:57</a>
+      <a href="20230610_232611_593_IMG_0016.JPG" data-ngthumb="thumbnails/20230610_232611_593_IMG_0016.JPG.png" data-ngdesc="23:26:11">23:26:11</a>
+      <a href="20230610_232628_711_IMG_0017.JPG" data-ngthumb="thumbnails/20230610_232628_711_IMG_0017.JPG.png" data-ngdesc="23:26:28">23:26:28</a>
+      <a href="20230610_232658_308_IMG_0018.JPG" data-ngthumb="thumbnails/20230610_232658_308_IMG_0018.JPG.png" data-ngdesc="23:26:58">23:26:58</a>
+      <a href="20230610_232723_953_IMG_0019.JPG" data-ngthumb="thumbnails/20230610_232723_953_IMG_0019.JPG.png" data-ngdesc="23:27:23">23:27:23</a>
+      <a href="20230610_232743_620_IMG_0020.JPG" data-ngthumb="thumbnails/20230610_232743_620_IMG_0020.JPG.png" data-ngdesc="23:27:43">23:27:43</a>
+      <a href="20230610_232855_115_IMG_0021.JPG" data-ngthumb="thumbnails/20230610_232855_115_IMG_0021.JPG.png" data-ngdesc="23:28:55">23:28:55</a>
+      <a href="20230610_232935_656_IMG_0022.JPG" data-ngthumb="thumbnails/20230610_232935_656_IMG_0022.JPG.png" data-ngdesc="23:29:35">23:29:35</a>
+      <a href="20230610_233339_966_IMG_0023.JPG" data-ngthumb="thumbnails/20230610_233339_966_IMG_0023.JPG.png" data-ngdesc="23:33:39">23:33:39</a>
+      <a href="20230610_233411_337_IMG_0024.JPG" data-ngthumb="thumbnails/20230610_233411_337_IMG_0024.JPG.png" data-ngdesc="23:34:11">23:34:11</a>
+      <a href="20230610_233500_418_IMG_0025.JPG" data-ngthumb="thumbnails/20230610_233500_418_IMG_0025.JPG.png" data-ngdesc="23:35:00">23:35:00</a>
+      <a href="20230610_233541_192_IMG_0026.JPG" data-ngthumb="thumbnails/20230610_233541_192_IMG_0026.JPG.png" data-ngdesc="23:35:41">23:35:41</a>
+      <a href="20230610_233602_267_IMG_0027.JPG" data-ngthumb="thumbnails/20230610_233602_267_IMG_0027.JPG.png" data-ngdesc="23:36:02">23:36:02</a>
+      <a href="20230610_233620_793_IMG_0028.JPG" data-ngthumb="thumbnails/20230610_233620_793_IMG_0028.JPG.png" data-ngdesc="23:36:20">23:36:20</a>
+      <a href="20230610_234241_672_IMG_0029.JPG" data-ngthumb="thumbnails/20230610_234241_672_IMG_0029.JPG.png" data-ngdesc="23:42:41">23:42:41</a>
+      <a href="20230610_234257_050_IMG_0030.JPG" data-ngthumb="thumbnails/20230610_234257_050_IMG_0030.JPG.png" data-ngdesc="23:42:57">23:42:57</a>
+      <a href="20230610_234311_710_IMG_0031.JPG" data-ngthumb="thumbnails/20230610_234311_710_IMG_0031.JPG.png" data-ngdesc="23:43:11">23:43:11</a>
+      <a href="20230610_235440_446_IMG_0032.JPG" data-ngthumb="thumbnails/20230610_235440_446_IMG_0032.JPG.png" data-ngdesc="23:54:40">23:54:40</a>
+      <a href="20230610_235514_433_IMG_0033.JPG" data-ngthumb="thumbnails/20230610_235514_433_IMG_0033.JPG.png" data-ngdesc="23:55:14">23:55:14</a>
+      <a href="20230610_235544_960_IMG_0034.JPG" data-ngthumb="thumbnails/20230610_235544_960_IMG_0034.JPG.png" data-ngdesc="23:55:44">23:55:44</a>
+      <a href="20230610_235622_184_IMG_0035.JPG" data-ngthumb="thumbnails/20230610_235622_184_IMG_0035.JPG.png" data-ngdesc="23:56:22">23:56:22</a>
+      <a href="20230610_235641_298_IMG_0036.JPG" data-ngthumb="thumbnails/20230610_235641_298_IMG_0036.JPG.png" data-ngdesc="23:56:41">23:56:41</a>
+      <a href="20230611_000059_655_IMG_0037.JPG" data-ngthumb="thumbnails/20230611_000059_655_IMG_0037.JPG.png" data-ngdesc="00:00:59">00:00:59</a>
+      <a href="20230611_000121_819_IMG_0038.JPG" data-ngthumb="thumbnails/20230611_000121_819_IMG_0038.JPG.png" data-ngdesc="00:01:21">00:01:21</a>
+      <a href="20230611_000140_180_IMG_0039.JPG" data-ngthumb="thumbnails/20230611_000140_180_IMG_0039.JPG.png" data-ngdesc="00:01:40">00:01:40</a>
+      <a href="20230611_000927_102_IMG_0040.JPG" data-ngthumb="thumbnails/20230611_000927_102_IMG_0040.JPG.png" data-ngdesc="00:09:27">00:09:27</a>
+      <a href="20230611_000953_794_IMG_0041.JPG" data-ngthumb="thumbnails/20230611_000953_794_IMG_0041.JPG.png" data-ngdesc="00:09:53">00:09:53</a>
+      <a href="20230611_001027_796_IMG_0042.JPG" data-ngthumb="thumbnails/20230611_001027_796_IMG_0042.JPG.png" data-ngdesc="00:10:27">00:10:27</a>
+      <a href="20230611_001053_527_IMG_0043.JPG" data-ngthumb="thumbnails/20230611_001053_527_IMG_0043.JPG.png" data-ngdesc="00:10:53">00:10:53</a>
+      <a href="20230611_001203_785_IMG_0044.JPG" data-ngthumb="thumbnails/20230611_001203_785_IMG_0044.JPG.png" data-ngdesc="00:12:03">00:12:03</a>
+      <a href="20230611_001222_399_IMG_0045.JPG" data-ngthumb="thumbnails/20230611_001222_399_IMG_0045.JPG.png" data-ngdesc="00:12:22">00:12:22</a>
+      <a href="20230611_001252_258_IMG_0046.JPG" data-ngthumb="thumbnails/20230611_001252_258_IMG_0046.JPG.png" data-ngdesc="00:12:52">00:12:52</a>
+      <a href="20230611_001336_667_IMG_0047.JPG" data-ngthumb="thumbnails/20230611_001336_667_IMG_0047.JPG.png" data-ngdesc="00:13:36">00:13:36</a>
+      <a href="20230611_001428_140_IMG_0048.JPG" data-ngthumb="thumbnails/20230611_001428_140_IMG_0048.JPG.png" data-ngdesc="00:14:28">00:14:28</a>
+      <a href="20230611_001451_076_IMG_0049.JPG" data-ngthumb="thumbnails/20230611_001451_076_IMG_0049.JPG.png" data-ngdesc="00:14:51">00:14:51</a>
+      <a href="20230611_001537_240_IMG_0050.JPG" data-ngthumb="thumbnails/20230611_001537_240_IMG_0050.JPG.png" data-ngdesc="00:15:37">00:15:37</a>
+      <a href="20230611_001908_821_IMG_0051.JPG" data-ngthumb="thumbnails/20230611_001908_821_IMG_0051.JPG.png" data-ngdesc="00:19:08">00:19:08</a>
+      <a href="20230611_002036_173_IMG_0052.JPG" data-ngthumb="thumbnails/20230611_002036_173_IMG_0052.JPG.png" data-ngdesc="00:20:36">00:20:36</a>
+      <a href="20230611_002727_337_IMG_0053.JPG" data-ngthumb="thumbnails/20230611_002727_337_IMG_0053.JPG.png" data-ngdesc="00:27:27">00:27:27</a>
+      <a href="20230611_004608_993_IMG_0054.JPG" data-ngthumb="thumbnails/20230611_004608_993_IMG_0054.JPG.png" data-ngdesc="00:46:08">00:46:08</a>
+      <a href="20230611_011305_931_IMG_0055.JPG" data-ngthumb="thumbnails/20230611_011305_931_IMG_0055.JPG.png" data-ngdesc="01:13:05">01:13:05</a>
+      <a href="20230611_013636_283_IMG_0056.JPG" data-ngthumb="thumbnails/20230611_013636_283_IMG_0056.JPG.png" data-ngdesc="01:36:36">01:36:36</a>
+      <a href="20230611_013705_467_IMG_0057.JPG" data-ngthumb="thumbnails/20230611_013705_467_IMG_0057.JPG.png" data-ngdesc="01:37:05">01:37:05</a>
+      <a href="20230611_013738_802_IMG_0058.JPG" data-ngthumb="thumbnails/20230611_013738_802_IMG_0058.JPG.png" data-ngdesc="01:37:38">01:37:38</a>
+      <a href="20230611_015722_501_IMG_0059.JPG" data-ngthumb="thumbnails/20230611_015722_501_IMG_0059.JPG.png" data-ngdesc="01:57:22">01:57:22</a>
+      <a href="20230611_015758_025_IMG_0060.JPG" data-ngthumb="thumbnails/20230611_015758_025_IMG_0060.JPG.png" data-ngdesc="01:57:58">01:57:58</a>
+      <a href="20230611_015813_054_IMG_0061.JPG" data-ngthumb="thumbnails/20230611_015813_054_IMG_0061.JPG.png" data-ngdesc="01:58:13">01:58:13</a>
+      <a href="20230611_021159_202_IMG_0062.JPG" data-ngthumb="thumbnails/20230611_021159_202_IMG_0062.JPG.png" data-ngdesc="02:11:59">02:11:59</a>
+
+    </div>
+
+
+
+    <div class="footer">
+      <div class="curved-decoration">
+        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2560 168.6227"
+          enable-background="new 0 0 2560 168.6227" xml:space="preserve">
+          <g>
+          </g>
+          <g>
+            <path d="M2560,0c0,0-219.6543,165.951-730.788,124.0771c-383.3156-31.4028-827.2138-96.9514-1244.7139-96.9514
+                    c-212.5106,0-439,3.5-584.4982,1.5844l0,139.9126h2560V0z"></path>
+          </g>
+        </svg>
+      </div>
+      <div class="footer-content flex flex-col items-center pb-16">
+        <h1 class="goku text-2xl md:text-4xl py-2">Sch&ouml;n, dass ihr da wart!</h1>
+        <h3 class="elaris text-md md:text-lg py-2">Dank euch war der Tag wundersch&ouml;n.</h3>
+      </div>
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="/assets/jquery-3.3.1.min.js"></script>
+    <link href="/assets/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/assets/jquery.nanogallery2.min.js"></script>
+    <script src="/assets/tailwind.js"></script>
+    <style>
+      @font-face {
+         font-family: 'goku';
+         src: url('/webfonts/Goku.ttf') format('truetype');
+         font-weight: normal;
+         font-style: normal;
+         font-display: swap;
+      }
+
+      @font-face {
+         font-family: 'Elaris';
+         src: url("/webfonts/elaris-regular.otf") format("opentype");
+      }
+
+      .goku {
+        font-family: goku;
+      }
+
+      .elaris {
+        font-family: elaris;
+      }
+   </style>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background-color: #E9E9E9;
+      }
+      .header, .footer-content {
+        background-color: #E9E9E9;
+        border: 0px;
+        
+      }
+
+      .header .curved-decoration svg:not([class*=bg]) path {
+          fill: #fff;
+      }
+
+      .footer .curved-decoration svg:not([class*=bg]) path {
+          fill: #E9E9E9;
+      }
+
+      .footer svg {
+        transform: scaleX(-1);
+      }
+
+      .footer {
+        background-color: white;
+      }
+
+      .curved-decoration svg {
+        height: auto;
+      }
+
+      #wedding-photobox {
+        padding: 2px;
+        background-color: white;
+        border: 0px;
+      }
+
+      .bg-fotobox::before {    
+            background-image: url('https://files.krissiundcarl.de/file/carlundkrissi-hochzeit/fotobox/20230610_223425_912_IMG_0021.JPG');
+      }
+
+      .bg-samstag-gaeste::before {    
+            background-image: url('https://files.krissiundcarl.de/file/carlundkrissi-hochzeit/samstag-gaeste/anja-2.jpeg');
+      }
+
+      .bg-box::before {
+            content: "";
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: 0.5;
+            border-radius: 0.75rem;
+      }
+
+      #photolist {
+        background-color: white;
+      }
+      
+    </style>
+  </head>
+  <body>
+
+    <div class="header">
+      <div class="header-content flex flex-col items-center py-12">
+        <h1 class="goku text-4xl md:text-6xl pt-8">Fotos von G&auml;sten</h1>
+        <h3 class="elaris text-md md:text-lg pt-2 pb-8">Danke f&uuml;r eure kreativen Schnappsch&uuml;sse!</h3>
+        <!-- <a class="w-56 inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-slate-900 text-white hover:bg-slate-700" href="https://files.krissiundcarl.de/file/carlundkrissi-hochzeit/fotobox/fotobox.zip" download="fotobox.zip" target="_blank">Alle Fotos herunterladen</a> -->
+      </div>
+      <div class="curved-decoration">
+        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2560 168.6227"
+          enable-background="new 0 0 2560 168.6227" xml:space="preserve">
+          <g>
+          </g>
+          <g>
+            <path d="M2560,0c0,0-219.6543,165.951-730.788,124.0771c-383.3156-31.4028-827.2138-96.9514-1244.7139-96.9514
+                    c-212.5106,0-439,3.5-584.4982,1.5844l0,139.9126h2560V0z"></path>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div id="wedding-photobox" class="py-8" data-nanogallery2='{
+        "itemsBaseURL": "https://files.krissiundcarl.de/file/carlundkrissi-hochzeit/samstag-gaeste/",
+        "thumbnailWidth": "auto",
+        "thumbnailBorderVertical": 0,
+        "thumbnailBorderHorizontal": 0,
+        "thumbnailDisplayTransition": "none",
+        "thumbnailLabel": {
+          "position": "overImageOnBottom",
+          "display": false
+        },
+        "thumbnailAlignment": "center",
+        "displayBreadcrumb": false,
+        "breadcrumbAutoHideTopLevel": false,
+        "breadcrumbOnlyCurrentLevel": false,
+        "thumbnailOpenImage": true
+      }'>
+      <a href="anja-1.jpeg" data-ngthumb="thumbnails/anja-1.jpeg.png" data-ngdesc=""></a>
+      <a href="anja-2.jpeg" data-ngthumb="thumbnails/anja-2.jpeg.png" data-ngdesc=""></a>
+      <a href="anja-3.jpeg" data-ngthumb="thumbnails/anja-3.jpeg.png" data-ngdesc=""></a>
+      <a href="anja-4.jpeg" data-ngthumb="thumbnails/anja-4.jpeg.png" data-ngdesc=""></a>
+      <a href="anja-5.jpeg" data-ngthumb="thumbnails/anja-5.jpeg.png" data-ngdesc=""></a>
+      <a href="anja-6.jpeg" data-ngthumb="thumbnails/anja-6.jpeg.png" data-ngdesc=""></a>
+      <a href="anja-7.jpeg" data-ngthumb="thumbnails/anja-7.jpeg.png" data-ngdesc=""></a>
+      <a href="anja-8.mp4" data-ngthumb="thumbnails/anja-8.mov.png" data-ngdesc=""></a>
+      <a href="anja-9.jpeg" data-ngthumb="thumbnails/anja-9.jpeg.png" data-ngdesc=""></a>
+      <a href="anja-10.jpeg" data-ngthumb="thumbnails/anja-10.jpeg.png" data-ngdesc=""></a>
+      <a href="anja-11.jpeg" data-ngthumb="thumbnails/anja-11.jpeg.png" data-ngdesc=""></a>
+      <a href="anja-12.jpeg" data-ngthumb="thumbnails/anja-12.jpeg.png" data-ngdesc=""></a>
+      <a href="anja-13.mp4" data-ngthumb="thumbnails/anja-13.mov.png" data-ngdesc=""></a>
+      <a href="anja-14.jpeg" data-ngthumb="thumbnails/anja-14.jpeg.png" data-ngdesc=""></a>
+      <a href="IMG_0329.JPG" data-ngthumb="thumbnails/IMG_0329.JPG.png" data-ngdesc=""></a>
+      <a href="trauzeugen-8.jpeg" data-ngthumb="thumbnails/trauzeugen-8.jpeg.png" data-ngdesc=""></a>
+      <a href="trauzeugen-9.jpeg" data-ngthumb="thumbnails/trauzeugen-9.jpeg.png" data-ngdesc=""></a>
+      <a href="trauzeugen-10.jpeg" data-ngthumb="thumbnails/trauzeugen-10.jpeg.png" data-ngdesc=""></a>
+      <a href="trauzeugen-11.jpeg" data-ngthumb="thumbnails/trauzeugen-11.jpeg.png" data-ngdesc=""></a>
+      <a href="trauzeugen-13.jpeg" data-ngthumb="thumbnails/trauzeugen-13.jpeg.png" data-ngdesc=""></a>
+      <a href="trauzeugen-14.jpeg" data-ngthumb="thumbnails/trauzeugen-14.jpeg.png" data-ngdesc=""></a>
+      <a href="trauzeugen-15.mp4" data-ngthumb="thumbnails/trauzeugen-15.mp4.png" data-ngdesc=""></a>
+      <a href="trauzeugen-16.jpeg" data-ngthumb="thumbnails/trauzeugen-16.jpeg.png" data-ngdesc=""></a>
+      <a href="trauzeugen-17.mp4" data-ngthumb="thumbnails/trauzeugen-17.mp4.png" data-ngdesc=""></a>
+      <a href="trauzeugen-18.jpeg" data-ngthumb="thumbnails/trauzeugen-18.jpeg.png" data-ngdesc=""></a>
+      <a href="trauzeugen-19.mp4" data-ngthumb="thumbnails/trauzeugen-19.mp4.png" data-ngdesc=""></a>
+      <a href="trauzeugen-20.jpeg" data-ngthumb="thumbnails/trauzeugen-20.jpeg.png" data-ngdesc=""></a>
+      <a href="trauzeugen-21.jpeg" data-ngthumb="thumbnails/trauzeugen-21.jpeg.png" data-ngdesc=""></a>
+      <a href="trauzeugen-22.jpeg" data-ngthumb="thumbnails/trauzeugen-22.jpeg.png" data-ngdesc=""></a>
+      <a href="trauzeugen-23.mp4" data-ngthumb="thumbnails/trauzeugen-23.mp4.png" data-ngdesc=""></a>
+      <a href="trauzeugen-24.jpeg" data-ngthumb="thumbnails/trauzeugen-24.jpeg.png" data-ngdesc=""></a>
+      <a href="trauzeugen-25.mp4" data-ngthumb="thumbnails/trauzeugen-25.mp4.png" data-ngdesc=""></a>
+      <a href="trauzeugen-26.jpeg" data-ngthumb="thumbnails/trauzeugen-26.jpeg.png" data-ngdesc=""></a>
+      <a href="trauzeugen-27.jpeg" data-ngthumb="thumbnails/trauzeugen-27.jpeg.png" data-ngdesc=""></a>
+      <a href="trauzeugen-28.jpeg" data-ngthumb="thumbnails/trauzeugen-28.jpeg.png" data-ngdesc=""></a>
+      <a href="trauzeugen-29.jpeg" data-ngthumb="thumbnails/trauzeugen-29.jpeg.png" data-ngdesc=""></a>
+      <a href="trauzeugen-30.jpeg" data-ngthumb="thumbnails/trauzeugen-30.jpeg.png" data-ngdesc=""></a>
+      <a href="trauzeugen-31.jpeg" data-ngthumb="thumbnails/trauzeugen-31.jpeg.png" data-ngdesc=""></a>
+      <a href="trauzeugen-32.jpeg" data-ngthumb="thumbnails/trauzeugen-32.jpeg.png" data-ngdesc=""></a>
+      <a href="trauzeugen-33.jpeg" data-ngthumb="thumbnails/trauzeugen-33.jpeg.png" data-ngdesc=""></a>
+      <a href="trauzeugen-34.jpeg" data-ngthumb="thumbnails/trauzeugen-34.jpeg.png" data-ngdesc=""></a>
+      <a href="trauzeugen-35.mp4" data-ngthumb="thumbnails/trauzeugen-35.mp4.png" data-ngdesc=""></a>
+      <a href="trauzeugen-36.jpeg" data-ngthumb="thumbnails/trauzeugen-36.jpeg.png" data-ngdesc=""></a>
+      <a href="trauzeugen-37.jpeg" data-ngthumb="thumbnails/trauzeugen-37.jpeg.png" data-ngdesc=""></a>
+      <a href="trauzeugen-38.jpeg" data-ngthumb="thumbnails/trauzeugen-38.jpeg.png" data-ngdesc=""></a>
+    </div>
+
+
+
+    <div class="footer">
+      <div class="curved-decoration">
+        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2560 168.6227"
+          enable-background="new 0 0 2560 168.6227" xml:space="preserve">
+          <g>
+          </g>
+          <g>
+            <path d="M2560,0c0,0-219.6543,165.951-730.788,124.0771c-383.3156-31.4028-827.2138-96.9514-1244.7139-96.9514
+                    c-212.5106,0-439,3.5-584.4982,1.5844l0,139.9126h2560V0z"></path>
+          </g>
+        </svg>
+      </div>
+      <div class="footer-content flex flex-col items-center pb-16">
+        <h1 class="goku text-2xl md:text-4xl py-2">Sch&ouml;n, dass ihr da wart!</h1>
+        <h3 class="elaris text-md md:text-lg py-2">Dank euch war der Tag wundersch&ouml;n.</h3>
+      </div>
+    </div>
+    
+  </body>
+</html>
