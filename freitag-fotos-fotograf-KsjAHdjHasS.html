@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="/assets/jquery-3.3.1.min.js"></script>
+    <link href="/assets/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/assets/jquery.nanogallery2.min.js"></script>
+    <script src="/assets/tailwind.js"></script>
+    <style>
+      @font-face {
+         font-family: 'goku';
+         src: url('/webfonts/Goku.ttf') format('truetype');
+         font-weight: normal;
+         font-style: normal;
+         font-display: swap;
+      }
+
+      @font-face {
+         font-family: 'Elaris';
+         src: url("/webfonts/elaris-regular.otf") format("opentype");
+      }
+
+      .goku {
+        font-family: goku;
+      }
+
+      .elaris {
+        font-family: elaris;
+      }
+   </style>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background-color: #E9E9E9;
+      }
+      .header, .footer-content {
+        background-color: #E9E9E9;
+        border: 0px;
+        
+      }
+
+      .header .curved-decoration svg:not([class*=bg]) path {
+          fill: #fff;
+      }
+
+      .footer .curved-decoration svg:not([class*=bg]) path {
+          fill: #E9E9E9;
+      }
+
+      .footer svg {
+        transform: scaleX(-1);
+      }
+
+      .footer {
+        background-color: white;
+      }
+
+      .curved-decoration svg {
+        height: auto;
+      }
+
+      #wedding-photobox {
+        padding: 2px;
+        background-color: white;
+        border: 0px;
+      }
+
+      .bg-box::before {
+            content: "";
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: 0.5;
+            border-radius: 0.75rem;
+      }
+
+      #photolist {
+        background-color: white;
+      }
+      
+    </style>
+  </head>
+  <body>
+
+    <div class="header">
+      <div class="header-content flex flex-col items-center py-12">
+        <h1 class="goku text-4xl md:text-6xl pt-8">Fotos von Stephan</h1>
+        <h3 class="elaris text-md md:text-lg pt-2 pb-8">Vielen Dank für diese tollen Fotos!</h3>
+        <p class="text-md md:text-lg pt-2 mb-8 elaris"><a target="_blank" href="photography.steppschuh.net" class="underline">Stephan Schultzs Portfolio</a></p>
+        <a class="w-56 inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-slate-900 text-white hover:bg-slate-700" href="https://files.krissiundcarl.de/file/carlundkrissi-hochzeit/freitag-fotograf/stephan-fotos.zip" download="fotos-freitag-fotograf.zip" target="_blank">Alle Fotos herunterladen</a>
+      </div>
+      <div class="curved-decoration">
+        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2560 168.6227"
+          enable-background="new 0 0 2560 168.6227" xml:space="preserve">
+          <g>
+          </g>
+          <g>
+            <path d="M2560,0c0,0-219.6543,165.951-730.788,124.0771c-383.3156-31.4028-827.2138-96.9514-1244.7139-96.9514
+                    c-212.5106,0-439,3.5-584.4982,1.5844l0,139.9126h2560V0z"></path>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div id="wedding-photobox" class="py-8" data-nanogallery2='{
+        "itemsBaseURL": "https://files.krissiundcarl.de/file/carlundkrissi-hochzeit/freitag-fotograf/",
+        "thumbnailWidth": "auto",
+        "thumbnailBorderVertical": 0,
+        "thumbnailBorderHorizontal": 0,
+        "thumbnailDisplayTransition": "none",
+        "thumbnailLabel": {
+          "position": "overImageOnBottom",
+          "display": false
+        },
+        "thumbnailAlignment": "center",
+        "displayBreadcrumb": false,
+        "breadcrumbAutoHideTopLevel": false,
+        "breadcrumbOnlyCurrentLevel": false,
+        "thumbnailOpenImage": true,
+        "viewerTools": {
+          "topRight":  "downloadButton, closeButton" 
+        }
+      }'>
+      <a href="2023_06_09_hochzeit_krissi_carl_0003.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0003.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0004.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0004.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0006.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0006.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0007.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0007.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0013.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0013.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0014.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0014.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0015.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0015.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0018.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0018.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0019.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0019.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0022.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0022.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0026.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0026.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0027.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0027.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0028.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0028.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0030.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0030.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0036.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0036.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0039.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0039.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0041.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0041.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0052.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0052.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0053.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0053.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0057.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0057.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0061.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0061.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0065.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0065.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0070.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0070.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0075.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0075.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0076.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0076.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0078.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0078.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0086.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0086.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0087.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0087.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0088.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0088.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0089.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0089.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0093.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0093.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0098.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0098.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0104.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0104.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0105.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0105.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0108.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0108.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0112.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0112.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0113.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0113.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0116.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0116.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0118.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0118.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0121.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0121.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0122.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0122.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0126.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0126.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0129.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0129.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0133.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0133.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0134.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0134.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0136.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0136.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0142.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0142.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0143.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0143.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0147.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0147.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0150.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0150.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0152.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0152.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0153.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0153.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0154.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0154.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0156.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0156.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0157.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0157.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0160.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0160.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0162.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0162.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0167.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0167.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0168.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0168.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0170.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0170.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0171.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0171.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0175.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0175.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0176.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0176.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0184.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0184.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0188.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0188.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0190.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0190.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0191.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0191.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0193.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0193.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0194.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0194.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0195.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0195.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0198.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0198.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0202.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0202.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0204.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0204.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0207.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0207.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0208.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0208.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0214.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0214.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0215.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0215.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0219.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0219.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0223.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0223.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0227.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0227.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0229.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0229.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0700.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0700.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0716.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0716.jpg.png" data-ngdesc=""></a>
+      <a href="2023_06_09_hochzeit_krissi_carl_0754.jpg" data-ngthumb="thumbnails/2023_06_09_hochzeit_krissi_carl_0754.jpg.png" data-ngdesc=""></a>
+    </div>
+
+
+
+    <div class="footer">
+      <div class="curved-decoration">
+        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2560 168.6227"
+          enable-background="new 0 0 2560 168.6227" xml:space="preserve">
+          <g>
+          </g>
+          <g>
+            <path d="M2560,0c0,0-219.6543,165.951-730.788,124.0771c-383.3156-31.4028-827.2138-96.9514-1244.7139-96.9514
+                    c-212.5106,0-439,3.5-584.4982,1.5844l0,139.9126h2560V0z"></path>
+          </g>
+        </svg>
+      </div>
+      <div class="footer-content flex flex-col items-center pb-16">
+        <h1 class="goku text-2xl md:text-4xl py-2">Sch&ouml;n, dass ihr da wart!</h1>
+        <h3 class="elaris text-md md:text-lg py-2">Dank euch war der Tag wundersch&ouml;n.</h3>
+      </div>
+    </div>
+    
+  </body>
+</html>
