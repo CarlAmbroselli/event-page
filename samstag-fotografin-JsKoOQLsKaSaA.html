@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="/assets/jquery-3.3.1.min.js"></script>
+    <link href="/assets/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/assets/jquery.nanogallery2.min.js"></script>
+    <script src="/assets/tailwind.js"></script>
+    <style>
+      @font-face {
+         font-family: 'goku';
+         src: url('/webfonts/Goku.ttf') format('truetype');
+         font-weight: normal;
+         font-style: normal;
+         font-display: swap;
+      }
+
+      @font-face {
+         font-family: 'Elaris';
+         src: url("/webfonts/elaris-regular.otf") format("opentype");
+      }
+
+      .goku {
+        font-family: goku;
+      }
+
+      .elaris {
+        font-family: elaris;
+      }
+   </style>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background-color: #E9E9E9;
+      }
+      .header, .footer-content {
+        background-color: #E9E9E9;
+        border: 0px;
+        
+      }
+
+      .header .curved-decoration svg:not([class*=bg]) path {
+          fill: #fff;
+      }
+
+      .footer .curved-decoration svg:not([class*=bg]) path {
+          fill: #E9E9E9;
+      }
+
+      .footer svg {
+        transform: scaleX(-1);
+      }
+
+      .footer {
+        background-color: white;
+      }
+
+      .curved-decoration svg {
+        height: auto;
+      }
+
+      #wedding-photobox {
+        padding: 2px;
+        background-color: white;
+        border: 0px;
+      }
+
+      .bg-box::before {
+            content: "";
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: 0.5;
+            border-radius: 0.75rem;
+      }
+
+      #photolist {
+        background-color: white;
+      }
+      
+    </style>
+  </head>
+  <body>
+
+    <div class="header">
+      <div class="header-content flex flex-col items-center py-12">
+        <h1 class="goku text-4xl md:text-6xl pt-8">Fotos-Vorschau von Birnur</h1>
+        <h3 class="elaris text-md md:text-lg pt-2 pb-8">Alle anderen Fotos & G&auml;stefotos kommen im Herbst</h3>
+        <!-- <a class="w-56 inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-slate-900 text-white hover:bg-slate-700" href="https://files.krissiundcarl.de/file/carlundkrissi-hochzeit/fotobox/fotobox.zip" download="fotobox.zip" target="_blank">Alle Fotos herunterladen</a> -->
+      </div>
+      <div class="curved-decoration">
+        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2560 168.6227"
+          enable-background="new 0 0 2560 168.6227" xml:space="preserve">
+          <g>
+          </g>
+          <g>
+            <path d="M2560,0c0,0-219.6543,165.951-730.788,124.0771c-383.3156-31.4028-827.2138-96.9514-1244.7139-96.9514
+                    c-212.5106,0-439,3.5-584.4982,1.5844l0,139.9126h2560V0z"></path>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div id="wedding-photobox" class="py-8" data-nanogallery2='{
+        "itemsBaseURL": "https://files.krissiundcarl.de/file/carlundkrissi-hochzeit/fotograf-samstag/",
+        "thumbnailWidth": "auto",
+        "thumbnailBorderVertical": 0,
+        "thumbnailBorderHorizontal": 0,
+        "thumbnailDisplayTransition": "none",
+        "thumbnailLabel": {
+          "position": "overImageOnBottom",
+          "display": false
+        },
+        "thumbnailAlignment": "center",
+        "displayBreadcrumb": false,
+        "breadcrumbAutoHideTopLevel": false,
+        "breadcrumbOnlyCurrentLevel": false,
+        "thumbnailOpenImage": true,
+        "viewerTools": {
+          "topRight":  "downloadButton, closeButton" 
+        }
+      }'>
+      <a href="be230610-0057.jpg" data-ngthumb="thumbnails/be230610-0057.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0058.jpg" data-ngthumb="thumbnails/be230610-0058.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0065.jpg" data-ngthumb="thumbnails/be230610-0065.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0080.jpg" data-ngthumb="thumbnails/be230610-0080.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0088.jpg" data-ngthumb="thumbnails/be230610-0088.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0097.jpg" data-ngthumb="thumbnails/be230610-0097.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0166.jpg" data-ngthumb="thumbnails/be230610-0166.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0167.jpg" data-ngthumb="thumbnails/be230610-0167.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0184.jpg" data-ngthumb="thumbnails/be230610-0184.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0189.jpg" data-ngthumb="thumbnails/be230610-0189.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0190.jpg" data-ngthumb="thumbnails/be230610-0190.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0198.jpg" data-ngthumb="thumbnails/be230610-0198.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0206.jpg" data-ngthumb="thumbnails/be230610-0206.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0216.jpg" data-ngthumb="thumbnails/be230610-0216.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0261.jpg" data-ngthumb="thumbnails/be230610-0261.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0278.jpg" data-ngthumb="thumbnails/be230610-0278.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0308.jpg" data-ngthumb="thumbnails/be230610-0308.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0309.jpg" data-ngthumb="thumbnails/be230610-0309.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0343.jpg" data-ngthumb="thumbnails/be230610-0343.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0344.jpg" data-ngthumb="thumbnails/be230610-0344.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0361.jpg" data-ngthumb="thumbnails/be230610-0361.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0362.jpg" data-ngthumb="thumbnails/be230610-0362.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0400.jpg" data-ngthumb="thumbnails/be230610-0400.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0405.jpg" data-ngthumb="thumbnails/be230610-0405.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0415.jpg" data-ngthumb="thumbnails/be230610-0415.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0416.jpg" data-ngthumb="thumbnails/be230610-0416.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0423.jpg" data-ngthumb="thumbnails/be230610-0423.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0810.jpg" data-ngthumb="thumbnails/be230610-0810.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0813.jpg" data-ngthumb="thumbnails/be230610-0813.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0820.jpg" data-ngthumb="thumbnails/be230610-0820.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0821.jpg" data-ngthumb="thumbnails/be230610-0821.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0847.jpg" data-ngthumb="thumbnails/be230610-0847.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0851.jpg" data-ngthumb="thumbnails/be230610-0851.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0854.jpg" data-ngthumb="thumbnails/be230610-0854.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0863.jpg" data-ngthumb="thumbnails/be230610-0863.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0864.jpg" data-ngthumb="thumbnails/be230610-0864.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0877.jpg" data-ngthumb="thumbnails/be230610-0877.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0891.jpg" data-ngthumb="thumbnails/be230610-0891.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0899.jpg" data-ngthumb="thumbnails/be230610-0899.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0900.jpg" data-ngthumb="thumbnails/be230610-0900.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0918.jpg" data-ngthumb="thumbnails/be230610-0918.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0939.jpg" data-ngthumb="thumbnails/be230610-0939.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0951.jpg" data-ngthumb="thumbnails/be230610-0951.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0968.jpg" data-ngthumb="thumbnails/be230610-0968.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0981.jpg" data-ngthumb="thumbnails/be230610-0981.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0982.jpg" data-ngthumb="thumbnails/be230610-0982.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-0987.jpg" data-ngthumb="thumbnails/be230610-0987.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-1082.jpg" data-ngthumb="thumbnails/be230610-1082.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-1083.jpg" data-ngthumb="thumbnails/be230610-1083.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-1094.jpg" data-ngthumb="thumbnails/be230610-1094.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-1099.jpg" data-ngthumb="thumbnails/be230610-1099.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-1100.jpg" data-ngthumb="thumbnails/be230610-1100.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-1103.jpg" data-ngthumb="thumbnails/be230610-1103.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-1133.jpg" data-ngthumb="thumbnails/be230610-1133.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-1137.jpg" data-ngthumb="thumbnails/be230610-1137.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-1158.jpg" data-ngthumb="thumbnails/be230610-1158.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-1161.jpg" data-ngthumb="thumbnails/be230610-1161.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-1173.jpg" data-ngthumb="thumbnails/be230610-1173.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-1180.jpg" data-ngthumb="thumbnails/be230610-1180.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-1193.jpg" data-ngthumb="thumbnails/be230610-1193.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-1194.jpg" data-ngthumb="thumbnails/be230610-1194.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-1195.jpg" data-ngthumb="thumbnails/be230610-1195.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-1205.jpg" data-ngthumb="thumbnails/be230610-1205.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-1212.jpg" data-ngthumb="thumbnails/be230610-1212.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-1214.jpg" data-ngthumb="thumbnails/be230610-1214.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-1239.jpg" data-ngthumb="thumbnails/be230610-1239.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-1251.jpg" data-ngthumb="thumbnails/be230610-1251.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-1354.jpg" data-ngthumb="thumbnails/be230610-1354.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-1355.jpg" data-ngthumb="thumbnails/be230610-1355.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-1356.jpg" data-ngthumb="thumbnails/be230610-1356.jpg.png" data-ngdesc=""></a>
+      <a href="be230610-1357.jpg" data-ngthumb="thumbnails/be230610-1357.jpg.png" data-ngdesc=""></a>
+    </div>
+
+
+
+    <div class="footer">
+      <div class="curved-decoration">
+        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2560 168.6227"
+          enable-background="new 0 0 2560 168.6227" xml:space="preserve">
+          <g>
+          </g>
+          <g>
+            <path d="M2560,0c0,0-219.6543,165.951-730.788,124.0771c-383.3156-31.4028-827.2138-96.9514-1244.7139-96.9514
+                    c-212.5106,0-439,3.5-584.4982,1.5844l0,139.9126h2560V0z"></path>
+          </g>
+        </svg>
+      </div>
+      <div class="footer-content flex flex-col items-center pb-16">
+        <h1 class="goku text-2xl md:text-4xl py-2">Sch&ouml;n, dass ihr da wart!</h1>
+        <h3 class="elaris text-md md:text-lg py-2">Dank euch war der Tag wundersch&ouml;n.</h3>
+      </div>
+    </div>
+    
+  </body>
+</html>

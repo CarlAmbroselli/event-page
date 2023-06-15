@@ -93,6 +93,10 @@
             background-image: url('https://files.krissiundcarl.de/file/carlundkrissi-hochzeit/startseite/drohne-asdfasdf.mp4.png');
       }
 
+      .bg-samstag-birnur::before {    
+            background-image: url('https://files.krissiundcarl.de/file/carlundkrissi-hochzeit/startseite/OsPPasfJKAjdaKo.jpg');
+      }
+
       .bg-box::before {
             content: "";
             background-size: cover;
@@ -165,8 +169,11 @@
     
   </body>
   <script>
+    let storedPassword = null;
     function onReceive() {
       if (this.status == 200) {
+        let passwordValue = storedPassword || document.getElementById("password-input").value.trim()
+        localStorage.setItem("stored-password", passwordValue);
         document.getElementById("photolist").innerHTML = this.responseText;
       } else {
         onError()
@@ -181,9 +188,20 @@
       req.addEventListener("load", onReceive);
       req.addEventListener("error", onError);
       
-      req.open("GET", "/" + btoa(document.getElementById("password-input").value) + "-2.html");
+      let passwordValue = storedPassword || document.getElementById("password-input").value.trim()
+      req.open("GET", "/" + btoa(passwordValue) + "-2.html");
       req.send();
     }
+
+    function checkStorage() {
+      const password = localStorage.getItem("stored-password");
+      if (password !== null) {
+        storedPassword = password;
+        checkPassword();
+      }
+    }
+
+    checkStorage()
 
   </script>
 </html>
