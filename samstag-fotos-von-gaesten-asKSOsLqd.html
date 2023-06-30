@@ -243,7 +243,7 @@
         $(pic).on('load', function() { 
               let current = document.querySelector('.nGY2ViewerMediaPan.imgCurrent > .nGY2ViewerMedia')
               fixed.push(current.src)
-              current.style.height = "100%"
+              // current.style.height = "100%"
               let handle = current
               window.setTimeout(() => {
                 handle.style.height = (handle.naturalHeight / handle.naturalWidth) * handle.width + "px"
