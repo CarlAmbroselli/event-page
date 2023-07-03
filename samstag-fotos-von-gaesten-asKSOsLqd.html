@@ -233,24 +233,11 @@
         <h3 class="elaris text-md md:text-lg py-2">Dank euch war der Tag wundersch&ouml;n.</h3>
       </div>
     </div>
-    
-  <script>
-    let fixed = []
-    window.setInterval(() => {
-      pic = document.querySelector('.nGY2ViewerMediaPan.imgCurrent > .nGY2ViewerMedia')
-      if (pic && fixed.indexOf(pic.src) === -1) {
-        fixed.push(pic.src)
-        $(pic).on('load', function() { 
-              let current = document.querySelector('.nGY2ViewerMediaPan.imgCurrent > .nGY2ViewerMedia')
-              fixed.push(current.src)
-              // current.style.height = "100%"
-              let handle = current
-              window.setTimeout(() => {
-                handle.style.height = (handle.naturalHeight / handle.naturalWidth) * handle.width + "px"
-              }, 50)
-            })
-          }
-    }, 200)
-  </script> 
+    <script>
+      const password = localStorage.getItem("stored-password");
+      if (password === null) {
+        window.location.href = "/"
+      }
+    </script>
   </body>
 </html>

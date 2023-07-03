@@ -97,6 +97,10 @@
             background-image: url('https://files.krissiundcarl.de/file/carlundkrissi-hochzeit/startseite/OsPPasfJKAjdaKo.jpg');
       }
 
+      .bg-samstag-stephan::before {    
+            background-image: url('https://files.krissiundcarl.de/file/carlundkrissi-hochzeit/startseite/asdfLAKSDad.jpg');
+      }
+
       .bg-box::before {
             content: "";
             background-size: cover;
@@ -189,7 +193,7 @@
       req.addEventListener("error", onError);
       
       let passwordValue = storedPassword || document.getElementById("password-input").value.trim()
-      req.open("GET", "/" + btoa(passwordValue) + "-2.html");
+      req.open("GET", "/" + btoa(passwordValue) + "-3.html");
       req.send();
     }
 
